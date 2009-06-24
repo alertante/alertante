@@ -8,7 +8,7 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 logging.basicConfig(
     level = logging.DEBUG,
     format = '%(asctime)s %(levelname)s %(message)s',
-    filename = '/tmp/fixmystreet.log',
+    filename = '/home/alertante/logs/fixmystreet.log',
     filemode = 'w'
 )
         
@@ -34,7 +34,7 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = '/media/'
+MEDIA_URL = '/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -65,10 +65,11 @@ MIDDLEWARE_CLASSES = (
 LANGUAGES = (
   ('en','English'),
   ('fr', 'French'),
+  ('es', 'Spanish'),
 )
 
 
-ROOT_URLCONF = 'fixmystreet.urls'
+ROOT_URLCONF = 'alertante.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
