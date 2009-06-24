@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from mainapp.models import City, Ward, WardMap, Report
+from fixmystreet.models import City, Ward, WardMap, Report
 from django.template import Context, RequestContext
 from django.db import connection
 

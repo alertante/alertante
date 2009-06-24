@@ -87,7 +87,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
     'google_analytics',
     'transmeta',
-    'mainapp',
+    'fixmystreet',
 )
 
 

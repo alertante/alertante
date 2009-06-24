@@ -1,7 +1,7 @@
 from django.template import Context, RequestContext
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
-from mainapp.models import Report, ReportUpdate
+from fixmystreet.models import Report, ReportUpdate
 
 
 def show(request, promo_code):

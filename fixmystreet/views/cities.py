@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from mainapp.models import City, CitiesReportCountQuery, CityReportCountQuery, CityMap
+from fixmystreet.models import City, CitiesReportCountQuery, CityReportCountQuery, CityMap
 from django.template import Context, RequestContext
 
 def index(request):    

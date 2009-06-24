@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponseRedirect
-from mainapp.models import Report, ReportSubscriber
-from mainapp.forms import ReportSubscriberForm
+from fixmystreet.models import Report, ReportSubscriber
+from fixmystreet.forms import ReportSubscriberForm
 from django.template import Context, RequestContext
 from django.utils.translation import ugettext as _
 

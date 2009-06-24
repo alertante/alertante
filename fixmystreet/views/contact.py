@@ -1,6 +1,6 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from mainapp.models import Report
-from mainapp.forms import ContactForm
+from fixmystreet.models import Report
+from fixmystreet.forms import ContactForm
 from django.template import Context, RequestContext
 from django.http import HttpResponseRedirect
 
