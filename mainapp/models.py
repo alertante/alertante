@@ -10,8 +10,8 @@ import time
 from datetime import datetime as dt
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy, ugettext as _
-from contrib.transmeta import TransMeta
-from contrib.stdimage import StdImageField
+from transmeta import TransMeta
+from stdimage import StdImageField
 
 class Province(models.Model):
     name = models.CharField(max_length=100)

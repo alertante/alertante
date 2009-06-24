@@ -1,6 +1,6 @@
 from fixmystreet.mainapp.models import Ward,ReportCategory, ReportCategoryClass, FaqEntry, Councillor
 from django.contrib import admin
-from contrib.transmeta import canonical_fieldname
+from transmeta import canonical_fieldname
 
 class ReportCategoryClassAdmin(admin.ModelAdmin):
     list_display = ('name',)
