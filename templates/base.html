@@ -2,11 +2,11 @@
 {% load googleanalytics_tags %}
 <html>
 <head>
-	<title>{% trans "FixMyStreet Canada" %} - {% block title %}{% trans "Home" %}{% endblock %}</title>
-	<link rel="stylesheet" type="text/css" href="/media/css/global.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/typography.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/layout-6.css" />
-	<link rel="stylesheet" type="text/css" href="/media/css/colors.css" />
+	<title>{% trans "El Alertante" %} - {% block title %}{% trans "Home" %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="/css/global.css" />
+	<link rel="stylesheet" type="text/css" href="/css/typography.css" />
+	<link rel="stylesheet" type="text/css" href="/css/layout-6.css" />
+	<link rel="stylesheet" type="text/css" href="/css/colors.css" />
 	{% block css %}{% endblock %}
 	{% block script %}{% endblock %}	
 	{% if google  %}
@@ -19,10 +19,11 @@
 			<div id="page_container">
 				<div id="header">
 					<div id="header_left">
-						<a href='/'><img src="/media/images/fixmystreetlogo.png"></a>
+						<a href='/'><img src="/images/logo.png"></a>
 					</div>
 					<div id="header_right">
-						<a href='http://visiblegovernment.ca'><img src="/media/images/sitebyvg.png"></a>
+						<a href='http://explicas.org'><img
+                            src="/images/explicas.png"></a>
 					</div>
 				</div>
 				<div id="top_menu"><div id='top_menu_tr'><div id='top_menu_bl'><div id='top_menu_br'>
@@ -52,7 +53,7 @@
 					{% block content %}{% endblock %}
 				</div>
 				<div id="footer">
-					<a href="http://visiblegovernment.ca">VisibleGovernment.ca</a>  | {% trans "Promotions" %}: <a href="/promotions/OBC">OBC</a></p>
+					<a href="http://explicas.org">Explicas.org</a>  | {% trans "Promotions" %}: <a href="/promotions/OBC">OBC</a></p>
 					<div id='bugreport'>{% trans "Find a bug?" %} <a href="/contact/">{% trans "Tell us" %}</a>!</div>
 				</div>
 			</div><!--end page_container -->

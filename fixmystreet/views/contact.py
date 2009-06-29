@@ -4,8 +4,6 @@ from fixmystreet.forms import ContactForm
 from django.template import Context, RequestContext
 from django.http import HttpResponseRedirect
 
-import settings
-
 def thanks(request): 
      return render_to_response("contact/thanks.html", {},
                 context_instance=RequestContext(request))

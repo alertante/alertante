@@ -6,7 +6,7 @@ import libxml2
 from django.template import Context, RequestContext
 from django.contrib.gis.measure import D 
 from django.contrib.gis.geos import *
-import settings
+from django.conf import settings
 from django.utils.translation import ugettext as _
 import logging
 import os

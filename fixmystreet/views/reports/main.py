@@ -4,7 +4,7 @@ from fixmystreet.models import Report, ReportUpdate, Ward, FixMyStreetMap, Repor
 from fixmystreet.forms import ReportForm,ReportUpdateForm
 from django.template import Context, RequestContext
 from django.contrib.gis.geos import *
-from fixmystreet import settings
+from django.conf import settings
 from django.utils.translation import ugettext as _
 
 

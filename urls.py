@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.contrib import admin
-from mainapp.feeds import LatestReports, LatestReportsByCity, LatestReportsByWard, LatestUpdatesByReport
+from fixmystreet.feeds import LatestReports, LatestReportsByCity, LatestReportsByWard, LatestUpdatesByReport
 
 feeds = {
     'reports': LatestReports,
@@ -19,63 +19,63 @@ urlpatterns = patterns('',
 )
 
 
-urlpatterns += patterns('mainapp.views.main',
+urlpatterns += patterns('fixmystreet.views.main',
     (r'^$', 'index'),
     (r'^search', 'search_address'),
     (r'about/$', 'about')
 )
 
-urlpatterns += patterns('mainapp.views.faq',
+urlpatterns += patterns('fixmystreet.views.faq',
     (r'^about/(\S+)$', 'show'),
 )
 
 
-urlpatterns += patterns('mainapp.views.promotion',
+urlpatterns += patterns('fixmystreet.views.promotion',
     (r'^promotions/(\w+)$', 'show'),
 )
 
 
-urlpatterns += patterns('mainapp.views.wards',
+urlpatterns += patterns('fixmystreet.views.wards',
     (r'^wards/(\d+)', 'show'),       
     (r'^cities/(\d+)/wards/(\d+)', 'show_by_number'),       
     
 )
 
-urlpatterns += patterns('mainapp.views.cities',
+urlpatterns += patterns('fixmystreet.views.cities',
     (r'^cities/(\d+)$', 'show'),       
     (r'^cities', 'index'),
 )
 
-urlpatterns += patterns( 'mainapp.views.reports.updates',
+urlpatterns += patterns( 'fixmystreet.views.reports.updates',
     (r'^reports/updates/confirm/(\S+)', 'confirm'), 
     (r'^reports/updates/create/', 'create'), 
     (r'^reports/(\d+)/updates/', 'new'),
 )
 
 
-urlpatterns += patterns( 'mainapp.views.reports.subscribers',
+urlpatterns += patterns( 'fixmystreet.views.reports.subscribers',
     (r'^reports/subscribers/confirm/(\S+)', 'confirm'), 
     (r'^reports/subscribers/unsubscribe/(\S+)', 'unsubscribe'),
     (r'^reports/subscribers/create/', 'create'),
     (r'^reports/(\d+)/subscribers/', 'new'),
 )
 
-urlpatterns += patterns( 'mainapp.views.reports.flags',
+urlpatterns += patterns( 'fixmystreet.views.reports.flags',
     (r'^reports/(\d+)/flags/thanks', 'thanks'),
     (r'^reports/(\d+)/flags', 'new'),
 )
 
-urlpatterns += patterns('mainapp.views.reports.main',
+urlpatterns += patterns('fixmystreet.views.reports.main',
     (r'^reports/(\d+)$', 'show'),       
     (r'^reports/', 'new'),
 )
 
-urlpatterns += patterns('mainapp.views.contact',
+urlpatterns += patterns('fixmystreet.views.contact',
     (r'^contact/thanks', 'thanks'),
     (r'^contact', 'new'),
 )
 
-urlpatterns += patterns('mainapp.views.ajax',
+urlpatterns += patterns('fixmystreet.views.ajax',
     (r'^ajax/categories/(\d+)', 'category_desc'),
 )
 
