@@ -741,3 +741,6 @@ msgstr ""
 
 #~ msgid "French"
 #~ msgstr "Francés"
+
+#~ msgid "Spanish"
+#~ msgstr "Español"
